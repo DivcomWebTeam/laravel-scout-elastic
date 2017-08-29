@@ -29,7 +29,7 @@ class ElasticsearchProvider extends ServiceProvider
             $provider = CredentialProvider::fromCredentials(
                 new Credentials(config('scout.elasticsearch.aws_access_key'), config('scout.elasticsearch.aws_secret_key'))
             );
-            $handler = new ElasticsearchPhpHandler(getenv('AWSRegion'), $provider);
+            $handler = new ElasticsearchPhpHandler(config('scout.elasticsearch.aws_region'), $provider);
             return new ElasticsearchEngine(ElasticBuilder::create()
                 ->setHandler($handler)
                 ->setHosts(config('scout.elasticsearch.hosts'))
