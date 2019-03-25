@@ -1,5 +1,5 @@
 {
-    "name": "doctorallen/laravel-scout-elastic",
+    "name": "divcomwebteam/laravel-scout-elastic",
     "description": "Elastic Driver for Laravel Scout with support for AWS ES",
     "keywords": ["laravel", "scout", "elasticsearch", "elastic", "aws"],
     "require": {
